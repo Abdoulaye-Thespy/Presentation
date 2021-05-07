@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
@@ -28,11 +30,12 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
       <!-- personal CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
     <!-- personal CSS -->
   </head>
   <body>
     <!-- navbar-->
-    <header class="header">
+    <header class="header" id="mynav">
       <nav class="navbar navbar-expand-lg py-lg-0">
         <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold">Multi.</a>
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right small"><span class="text-uppercase mr-2">Menu</span><i class="fas fa-bars"></i></button>
@@ -42,8 +45,8 @@
               </li>
               <li class="nav-item"><a href="text.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">Text page </a>
               </li>
-              <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">Dropdown</a>
-                <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0"><a href="#" class="dropdown-item small text-uppercase">Dropdown item 1</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 2</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 3</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 4</a></div>
+              <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">Options</a>
+                <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0"><a href="#ConfRoom" class="dropdown-item small text-uppercase">Conference Room</a><a href="#ConfRoom" class="dropdown-item small text-uppercase">Meeting Room</a><a href="#Personal" class="dropdown-item small text-uppercase">Private Office</a><a href="#Shared" class="dropdown-item small text-uppercase">Shared Office</a></div>
               </li>
               <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">Contact </a>
               </li>
@@ -96,16 +99,57 @@
     </section>
     <section class="bg-gray py-5">
       <div class="container py-5">
+        <h2 class="mb-5" id="Personal">Private Office</h2>
         <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/blog1.jpg" alt="" class="img-fluid mb-4"></a>
+          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/office3.jpg" alt="" class="img-fluid mb-4"></a>
             <h3 class="h5 mb-4"><a href="#" class="text-dark">Rit eget tincidunt condimentum</a></h3>
             <p class="text-small">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
           </div>
-          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/blog2.jpg" alt="" class="img-fluid mb-4"></a>
+          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/office.jpg" alt="" class="img-fluid mb-4"></a>
             <h3 class="h5 mb-4"><a href="#" class="text-dark">Tempor sit amet</a></h3>
             <p class="text-small">Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
           </div>
-          <div class="col-lg-4"><a href="#" class="d-block"><img src="img/blog3.jpg" alt="" class="img-fluid mb-4"></a>
+          <div class="col-lg-4"><a href="#" class="d-block"><img src="img/office3.jpg" alt="" class="img-fluid mb-4"></a>
+            <h3 class="h5 mb-4"><a href="#" class="text-dark">Vestibulum erat wisi</a></h3>
+            <p class="text-small">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
+          </div>
+        </div>
+      </div>
+    </section>
+     </section>
+    <section class="bg-gray py-5">
+      <div class="container py-5">
+         <h4 class="mb-5" id="Shared">Shared Office</h4>
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/office.jpg" alt="" class="img-fluid mb-4"></a>
+            <h3 class="h5 mb-4"><a href="#" class="text-dark">Rit eget tincidunt condimentum</a></h3>
+            <p class="text-small">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/office.jpg" alt="" class="img-fluid mb-4"></a>
+            <h3 class="h5 mb-4"><a href="#" class="text-dark">Tempor sit amet</a></h3>
+            <p class="text-small">Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
+          </div>
+          <div class="col-lg-4"><a href="#" class="d-block"><img src="img/office3.jpg" alt="" class="img-fluid mb-4"></a>
+            <h3 class="h5 mb-4"><a href="#" class="text-dark">Vestibulum erat wisi</a></h3>
+            <p class="text-small">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
+          </div>
+        </div>
+      </div>
+    </section>
+     </section>
+    <section class="bg-gray py-5">
+      <div class="container py-5">
+        <h4 class="mb-5" id="ConfRoom">Meeting and Conference Room</h4>
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/office3.jpg" alt="" class="img-fluid mb-4"></a>
+            <h3 class="h5 mb-4"><a href="#" class="text-dark">Rit eget tincidunt condimentum</a></h3>
+            <p class="text-small">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0"><a href="#" class="d-block"><img src="img/office.jpg" alt="" class="img-fluid mb-4"></a>
+            <h3 class="h5 mb-4"><a href="#" class="text-dark">Tempor sit amet</a></h3>
+            <p class="text-small">Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
+          </div>
+          <div class="col-lg-4"><a href="#" class="d-block"><img src="img/office3.jpg" alt="" class="img-fluid mb-4"></a>
             <h3 class="h5 mb-4"><a href="#" class="text-dark">Vestibulum erat wisi</a></h3>
             <p class="text-small">ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p><a href="#" class="btn btn-outline-primary btn-sm">Continue reading</a>
           </div>
@@ -114,7 +158,7 @@
     </section>
     <section class="py-5">
       <div class="container py-5">
-        <h2 class="mb-5">What we offer</h2>
+        <h2 class="mb-5">Facilities</h2>
         <div class="row mb-2">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="icon mb-4"><i class="pe-7s-signal"></i></div>
@@ -128,7 +172,7 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="icon mb-4"><i class="pe-7s-coffee"></i></div>
-            <h5 class="lined mb-4">Huge parking space </h5>
+            <h5 class="lined mb-4">Huge parking space</h5>
             <p class="text-muted text-small">Am terminated it excellence invitation projection as. She graceful shy.</p>
           </div>
         </div>
