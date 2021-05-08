@@ -2,6 +2,7 @@ $(function () {
     map();
 });
 
+let collapse = true;
 
 /* =========================================
  *  map
@@ -80,3 +81,19 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+let btn = document.getElementById("arrow");
+
+addEventListener("click", function() {
+if (collapse == true ) {
+btn.childNodes[1].style.display = "none"; 
+btn.childNodes[2].style.display = "inline";
+collapse = false;
+}
+else if (collapse == false ) {
+btn.childNodes[1].style.display = "inline"; 
+btn.childNodes[2].style.display = "none";
+collapse = true;
+}
+
+}); 
