@@ -31,6 +31,13 @@
         transition: left 0.3s ease-in;
 }
 
-.fasss {
+#arrows {
 	display: none;
+	color: #3385ff;
+}
+
+#bars,
+#arrows {
+color: #3385ff;
+font-size: 15px;
 }
