@@ -1,24 +1,7 @@
- @media only screen and (max-width: 1000px) {
+ @media only screen and (max-width: 978px) {
 .intro {
   width: 80%;
 }
-}
-
- @media only screen and (max-width: 570px) {
-.entry {
-   font-size: 20px;
-}
-}
-
- @media only screen and (max-width: 300px) {
-.entry {
-   font-size: 18px;
-}
-}
-
-
-@media (max-width: 768px) {
-
     .list {
     }
     .navbar-collapse {
@@ -29,7 +12,11 @@
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
-        width: 40%;
+        width: 100%;
+        min-height: 100VH;
+        z-index: 4;
+        opacity: 0.92;
+        margin-top: 3rem;
     }
     .navbar-collapse.collapsing {
         height: auto;
@@ -46,4 +33,24 @@
         -moz-transition: left 0.3s ease-in;
         transition: left 0.3s ease-in;
     }
+}
+
+ @media only screen and (max-width: 570px) {
+.entry {
+   font-size: 20px;
+}
+}
+
+ @media only screen and (max-width: 300px) {
+.entry {
+   font-size: 18px;
+}
+
+
+}
+
+
+@media (max-width: 768px) {
+
+
 }

@@ -12,14 +12,16 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-
+.menu {
+  z-index: 4;
+}
 
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 32;
   background-color: #737373;
   margin-bottom: 25px;
 }
